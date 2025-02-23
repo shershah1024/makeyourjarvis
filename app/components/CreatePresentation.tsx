@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useAuth } from '@/app/hooks/useAuth';
+import { useAuth } from '@/hooks/useAuth';
 import { createPresentation, PresentationRequest } from '@/utils/presentations';
 
 export default function CreatePresentation() {

@@ -2,12 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getValidAccessToken } from '@/utils/auth';
 import { supabase } from '@/utils/supabase';
 
-// Disable middleware for this route
-export const config = {
-  api: {
-    bodyParser: true,
-  },
-};
+// New route segment config format
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 export async function POST(req: NextRequest) {
   try {
